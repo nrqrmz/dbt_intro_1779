@@ -22,4 +22,7 @@ renamed as (
 
 )
 
-select * from renamed
+select 
+    concat(model, "_", color, "_", size) AS product_id,
+    price
+from renamed
